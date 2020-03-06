@@ -1,0 +1,70 @@
+[2020-03-02 16:43:27:538892][restartedMain] INFO  com.cos.lecture.LectureApplication - Starting LectureApplication on DESKTOP-Q1FT0P5 with PID 8672 (started by smtls in C:\src\lecture evaluation\lecture)
+[2020-03-02 16:43:27:538893][restartedMain] INFO  com.cos.lecture.LectureApplication - No active profile set, falling back to default profiles: default
+[2020-03-02 16:43:27:539328][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2020-03-02 16:43:27:539382][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53ms. Found 3 JPA repository interfaces.
+[2020-03-02 16:43:28:539543][restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-03-02 16:43:28:539561][restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-03-02 16:43:28:539564][restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-03-02 16:43:28:539567][restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5b39ceea' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-03-02 16:43:28:539569][restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-03-02 16:43:28:539576][restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-03-02 16:43:28:539960][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2020-03-02 16:43:28:539964][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2020-03-02 16:43:28:539966][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2020-03-02 16:43:28:539967][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+[2020-03-02 16:43:28:540083][restartedMain] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[2020-03-02 16:43:28:540087][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2020-03-02 16:43:28:540087][restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1190 ms
+[2020-03-02 16:43:28:540203][restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2020-03-02 16:43:28:540209][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+[2020-03-02 16:43:28:540228][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+[2020-03-02 16:43:28:540228][restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[2020-03-02 16:43:28:540240][restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.cos.lecture.model.LikeyKey
+[2020-03-02 16:43:28:540240][restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.cos.lecture.model.LikeyKey
+[2020-03-02 16:43:28:540368][restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2020-03-02 16:43:28:540368][restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2020-03-02 16:43:29:540438][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2020-03-02 16:43:29:540843][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@148d3ba5, org.springframework.security.web.context.SecurityContextPersistenceFilter@4f99903, org.springframework.security.web.header.HeaderWriterFilter@555f208, org.springframework.security.web.csrf.CsrfFilter@f8cf754, org.springframework.security.web.authentication.logout.LogoutFilter@5d152589, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@24c93626, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1918256d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d33adcd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2724ac5c, org.springframework.security.web.session.SessionManagementFilter@cc5ebe9, org.springframework.security.web.access.ExceptionTranslationFilter@3924f5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3ca5a089]
+[2020-03-02 16:43:29:541027][restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[2020-03-02 16:43:29:541084][restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+[2020-03-02 16:43:29:541287][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2020-03-02 16:43:29:541293][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2020-03-02 16:43:29:541294][restartedMain] INFO  com.cos.lecture.LectureApplication - Started LectureApplication in 2.449 seconds (JVM running for 542.814)
+[2020-03-02 16:43:29:541295][restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[2020-03-02 16:43:51:563263][http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-03-02 16:43:51:563264][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2020-03-02 16:43:51:563275][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+[2020-03-02 16:43:51:563281][http-nio-8080-exec-1] INFO  com.cos.lecture.aop.info.LogAdvice - com.cos.lecture.controller.UserController.UserLogin() <=================
+[2020-03-02 16:43:51:563282][http-nio-8080-exec-1] INFO  com.cos.lecture.aop.info.LogAdvice - Argument/Parameter : []
+[2020-03-02 16:43:51:563282][http-nio-8080-exec-1] INFO  com.cos.lecture.aop.info.LogAdvice - =================>
+[2020-03-02 16:43:54:565850][http-nio-8080-exec-8] INFO  com.cos.lecture.aop.info.LogAdvice - com.cos.lecture.controller.EvaluationController.TestHome() <=================
+[2020-03-02 16:43:54:565850][http-nio-8080-exec-8] INFO  com.cos.lecture.aop.info.LogAdvice - Argument/Parameter : [{}, org.apache.catalina.session.StandardSessionFacade@2a5a7019, 1]
+[2020-03-02 16:43:54:565850][http-nio-8080-exec-8] INFO  com.cos.lecture.aop.info.LogAdvice - =================>
+[2020-03-02 16:43:54:565908][http-nio-8080-exec-8] INFO  com.cos.lecture.aop.info.LogAdvice - com.cos.lecture.repository.EvaluationRepository.findAllByOrderByIdDesc() <=================
+[2020-03-02 16:43:54:565908][http-nio-8080-exec-8] INFO  com.cos.lecture.aop.info.LogAdvice - Argument/Parameter : [0]
+[2020-03-02 16:43:54:565908][http-nio-8080-exec-8] INFO  com.cos.lecture.aop.info.LogAdvice - =================>
+[2020-03-02 16:43:56:567821][http-nio-8080-exec-2] INFO  com.cos.lecture.aop.info.LogAdvice - com.cos.lecture.controller.UserController.UserLogin() <=================
+[2020-03-02 16:43:56:567822][http-nio-8080-exec-2] INFO  com.cos.lecture.aop.info.LogAdvice - Argument/Parameter : []
+[2020-03-02 16:43:56:567822][http-nio-8080-exec-2] INFO  com.cos.lecture.aop.info.LogAdvice - =================>
+[2020-03-02 16:43:58:570057][http-nio-8080-exec-1] INFO  com.cos.lecture.aop.info.LogAdvice - com.cos.lecture.controller.UserController.UserLoginProc() <=================
+[2020-03-02 16:43:58:570058][http-nio-8080-exec-1] INFO  com.cos.lecture.aop.info.LogAdvice - Argument/Parameter : [User(id=0, userName=qwer, userPassword=1234, userEmail=null, userEmailHash=null, userEmailChecked=null), org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterResponse@6315f58a, org.apache.catalina.session.StandardSessionFacade@2a5a7019]
+[2020-03-02 16:43:58:570058][http-nio-8080-exec-1] INFO  com.cos.lecture.aop.info.LogAdvice - =================>
+[2020-03-02 16:43:58:570059][http-nio-8080-exec-1] INFO  com.cos.lecture.aop.info.LogAdvice - com.cos.lecture.repository.UserRepository.findByUserName() <=================
+[2020-03-02 16:43:58:570059][http-nio-8080-exec-1] INFO  com.cos.lecture.aop.info.LogAdvice - Argument/Parameter : [qwer]
+[2020-03-02 16:43:58:570059][http-nio-8080-exec-1] INFO  com.cos.lecture.aop.info.LogAdvice - =================>
+[2020-03-02 16:43:58:570094][http-nio-8080-exec-1] INFO  com.cos.lecture.aop.info.LogAdvice - com.cos.lecture.repository.UserRepository.findByUserName() <=================
+[2020-03-02 16:43:58:570094][http-nio-8080-exec-1] INFO  com.cos.lecture.aop.info.LogAdvice - Argument/Parameter : [qwer]
+[2020-03-02 16:43:58:570095][http-nio-8080-exec-1] INFO  com.cos.lecture.aop.info.LogAdvice - =================>
+[2020-03-02 16:43:58:570219][http-nio-8080-exec-1] INFO  com.cos.lecture.aop.info.LogAdvice - com.cos.lecture.repository.UserRepository.findByUserName() <=================
+[2020-03-02 16:43:58:570219][http-nio-8080-exec-1] INFO  com.cos.lecture.aop.info.LogAdvice - Argument/Parameter : [qwer]
+[2020-03-02 16:43:58:570219][http-nio-8080-exec-1] INFO  com.cos.lecture.aop.info.LogAdvice - =================>
+[2020-03-02 16:43:58:570236][http-nio-8080-exec-3] INFO  com.cos.lecture.aop.info.LogAdvice - com.cos.lecture.controller.EvaluationController.TestHome() <=================
+[2020-03-02 16:43:58:570236][http-nio-8080-exec-3] INFO  com.cos.lecture.aop.info.LogAdvice - Argument/Parameter : [{}, org.apache.catalina.session.StandardSessionFacade@2a5a7019, 1]
+[2020-03-02 16:43:58:570236][http-nio-8080-exec-3] INFO  com.cos.lecture.aop.info.LogAdvice - =================>
+[2020-03-02 16:43:58:570247][http-nio-8080-exec-3] INFO  com.cos.lecture.aop.info.LogAdvice - com.cos.lecture.repository.EvaluationRepository.findAllByOrderByIdDesc() <=================
+[2020-03-02 16:43:58:570247][http-nio-8080-exec-3] INFO  com.cos.lecture.aop.info.LogAdvice - Argument/Parameter : [0]
+[2020-03-02 16:43:58:570247][http-nio-8080-exec-3] INFO  com.cos.lecture.aop.info.LogAdvice - =================>
+[2020-03-02 16:44:24:596162][Thread-20] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-03-02 16:44:24:596163][Thread-20] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2020-03-02 16:44:24:596165][Thread-20] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+[2020-03-02 16:44:24:596183][Thread-20] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.

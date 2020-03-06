@@ -1,0 +1,26 @@
+package com.cos.lecture.model;
+
+
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.IdClass;
+
+import lombok.Data;
+
+@Data
+@Entity
+@IdClass(LikeyKey.class)
+public class Likey{
+	
+	@Id
+	private int userId;
+	@Id
+	private int evaluationId;
+	
+	
+	private String userIP;
+}
+

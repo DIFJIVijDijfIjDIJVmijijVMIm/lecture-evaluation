@@ -1,0 +1,5 @@
+package com.cos.lecture.aop.warn;
+
+public class BindingAdvice {
+
+}

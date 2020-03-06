@@ -1,0 +1,99 @@
+package com.cos.lecture.controller;
+
+import java.util.List;
+
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.cos.lecture.model.Evaluation;
+import com.cos.lecture.repository.EvaluationRepository;
+import com.cos.lecture.repository.LikeyRepository;
+import com.cos.lecture.repository.UserRepository;
+
+@Controller
+public class EvaluationController {
+	
+	@Autowired
+	UserRepository mUserRepo;
+	
+	@Autowired
+	LikeyRepository mLikeyRepo;
+	
+	@Autowired
+	EvaluationRepository mEvalRepo;
+	
+	//공백 지우기
+	public static String delSpace(String str)
+    {
+        String result = "";
+        
+        for(int i = 0 ; i < str.length(); i ++)
+        {
+            if(str.charAt(i) != ' ')
+                result += str.charAt(i);
+        }
+        
+        return result;
+    }
+
+	//홈 화면에 리스트 출력하기
+	@GetMapping("/home")
+	public String TestHome(Model model, HttpSession session, @RequestParam int page) {
+
+		System.out.println("page : " + page);
+		session.setAttribute("searching", "NoSearching");
+		
+		if(page == 1 || page < 1) {
+			
+			page = 1;
+			session.setAttribute("page", page);
+			
+			page = page-1;
+			
+			List<Evaluation> allEvalSize = mEvalRepo.findAll();
+			int evalSize = allEvalSize.size()/4;
+			
+			if(allEvalSize.size()%4 != 0) {
+				evalSize = evalSize+1;
+			}
+			
+			System.out.println("allEvalSize : " + allEvalSize.size());
+			System.out.println("evalSize : " + evalSize);
+
+			List<Evaluation> eval = mEvalRepo.findAllByOrderByIdDesc(page);
+
+			model.addAttribute("eval", eval);
+			
+			session.setAttribute("evalSize", evalSize);
+			
+			return "home";
+			
+		}else {
+			session.setAttribute("page", page);
+			page = (page-1)*4;
+			
+			List<Evaluation> allEvalSize = mEvalRepo.findAll();
+			int evalSize = allEvalSize.size()/4;
+			
+			if(allEvalSize.size()%4 != 0) {
+				evalSize = evalSize+1;
+			}
+			
+			List<Evaluation> eval = mEvalRepo.findAllByOrderByIdDesc(page);
+
+			model.addAttribute("eval", eval);
+			
+			session.setAttribute("evalSize", evalSize);
+			
+			return "home";
+		}
+	}
+	
+	
+
+}

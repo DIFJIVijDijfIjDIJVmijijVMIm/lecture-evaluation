@@ -1,0 +1,8 @@
+package com.cos.lecture.model;
+
+import java.io.Serializable;
+
+public class LikeyKey implements Serializable {
+	private int userId;
+	private int evaluationId;
+}

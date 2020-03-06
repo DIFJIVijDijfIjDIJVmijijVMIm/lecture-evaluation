@@ -1,0 +1,9 @@
+package com.cos.lecture.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.cos.lecture.model.UserRole;
+
+public interface UserRoleRepository extends JpaRepository<UserRole, Integer> {
+
+}

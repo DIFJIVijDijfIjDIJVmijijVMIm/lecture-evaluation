@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+C:\src\lecture evaluation\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1001375165.index
+\lecture\src\main\java
+C:\src\lecture evaluation\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1815619272.index
+\lecture\src\main\java
+C:\src\lecture evaluation\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2113320892.index
+\lecture\src\main\java

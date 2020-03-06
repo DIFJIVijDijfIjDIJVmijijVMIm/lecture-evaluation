@@ -1,0 +1,5 @@
+package com.cos.lecture.aop.info;
+
+public class LogAdvice {
+
+}

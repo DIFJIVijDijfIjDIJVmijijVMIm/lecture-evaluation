@@ -1,0 +1,30 @@
+package com.cos.lecture.model;
+
+
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.IdClass;
+
+import lombok.Data;
+
+@Data
+@Entity
+@IdClass(LikeyKey.class)
+public class Likey{
+	
+	@Id
+	private int userId;
+	@Id
+	private int evaluationId;
+//	@ManyToOne
+//	@JoinColumn(name = "userId")
+//	private User user;
+//	
+//	@ManyToOne
+//	@JoinColumn(name = "evaluationId")
+//	private Evaluation evaluation;
+	
+	private String userIP;
+}
+
